@@ -1,5 +1,5 @@
 <?php
-echo 1;
+echo 10;
 exit;
 /**
  * Laravel - A PHP Framework For Web Artisans
