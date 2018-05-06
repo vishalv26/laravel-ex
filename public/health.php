@@ -10,7 +10,7 @@ $password = getenv("DB_PASSWORD");
 try {
     // Test database connection
 	if ($engine == "mysql") {
-		$dsn = "mysql:dbname={$database};host={$host};port={$port}";
+		$dsn = "mysql:dbname={$database};host={$host};port={$port};database={$database};username={$username};password={$password}";
 		$conn = new PDO($dsn, $username, $password);
 	} elseif ($engine == "pgsql") {
 		$dsn = "pgsql:dbname={$database};host={$host};port={$port}";
