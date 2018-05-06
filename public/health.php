@@ -24,5 +24,5 @@ try {
     die("Connection failed: " . $e->getMessage());
 }
 
-echo $dsn;
+var_dump($dsn);
 ?>
